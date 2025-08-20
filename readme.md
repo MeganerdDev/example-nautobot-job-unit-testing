@@ -362,6 +362,11 @@ KUBERNETES_DEFAULT_SERVICE_ADDRESS = "https://kubernetes.default.svc"
 13. **Create Git Repository object:**
     - Add your example tests repository
     - Run repository sync to download contents to disk
+    - NOTE: you might restart your docker container `invoke restart` if you don't see anything at the directory
+    ```bash
+    root@hostname:/source# ls /opt/nautobot/git/test_git_repo/jobs/
+    ls: cannot access '/opt/nautobot/git/test_git_repo/jobs/': No such file or directory
+    ```
 
 ### Running Job Tests
 
