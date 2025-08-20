@@ -72,5 +72,4 @@ class MyJobTestCase(TransactionTestCase):
 
         msgs = self._collect_logs(job_result.id, max_wait_s=3.0)
 
-        print(f"job messages: {msgs}")
         self.assertTrue(any("hello" in m.lower() for m in msgs))
